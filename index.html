@@ -6,14 +6,23 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
-      p::first-line {
-        background-color: yellowgreen;
-        color: white;
-        font-size: 50px;
+      :root {
+        --main-color: rgba(227, 84, 68, 0.5);
+        --default-border: 1px solid var(--main-color);
+      }
+      p {
+        background-color: var(--main-color);
+      }
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
   <body>
     <p>lsdkfsd sfhlsdfk sdflsdflkshd sifkdfslkd sdkfs</p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
