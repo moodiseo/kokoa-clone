@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niko Times</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
     <style>
-      a {
-        color: wheat;
-        background-color: tomato;
-        text-decoration: none;
-        padding: 3px 5px;
-        border-radius: 5px;
-        font-size: 50px;
-        transition: all 1s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      @keyframes superSexyCoinFlip {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotateY(180deg) translate(100px);
+        }
       }
-      a:hover {
-        border-radius: 20px;
-        color: tomato;
-        background-color: wheat;
+      img {
+        border: 2px solid black;
+        width: 350px;
+        height: 200px;
+        border-radius: 50%;
+        animation: superSexyCoinFlip 5s ease-in-out infinite;
       }
     </style>
   </head>
   <body>
-    <a href="#">Go home</a>
+    <img src="깃허브.png" />
   </body>
 </html>
