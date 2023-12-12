@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
       @keyframes superSexyCoinFlip {
-        from {
+        0% {
           transform: rotate(0deg);
         }
-        to {
-          transform: rotateY(180deg) translate(100px);
+        25% {
+          transform: scale(2);
+        }
+        50% {
+          transform: rotateY(180deg) translateY(100px);
+          border-radius: 0px;
+          border-color: tomato;
+          opacity: 0;
+        }
+        75% {
+          transform: scale(5);
+        }
+        100% {
+          transform: rotate(0deg);
         }
       }
       img {
         border: 2px solid black;
-        width: 350px;
+        width: 150px;
         height: 200px;
         border-radius: 50%;
         animation: superSexyCoinFlip 5s ease-in-out infinite;
