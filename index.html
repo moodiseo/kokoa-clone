@@ -1,46 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-      }
-      @keyframes superSexyCoinFlip {
-        0% {
-          transform: rotate(0deg);
-        }
-        25% {
-          transform: scale(2);
-        }
-        50% {
-          transform: rotateY(180deg) translateY(100px);
-          border-radius: 0px;
-          border-color: tomato;
-          opacity: 0;
-        }
-        75% {
-          transform: scale(5);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
-      }
-      img {
-        border: 2px solid black;
-        width: 150px;
-        height: 200px;
-        border-radius: 50%;
-        animation: superSexyCoinFlip 5s ease-in-out infinite;
-      }
-    </style>
+    <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
-    <img src="깃허브.png" />
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+    <form id="login-form">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/cfa304d46e.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
