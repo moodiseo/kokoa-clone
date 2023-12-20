@@ -29,3 +29,17 @@
   right: -10px;
   top: -16px;
 }
+.nav__notification2 {
+  background-color: #ff612a;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  position: absolute;
+  right: -6px;
+  top: -12px;
+}
